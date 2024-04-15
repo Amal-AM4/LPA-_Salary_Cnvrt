@@ -1,0 +1,99 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #A41E37;
+    color: #DA7D67;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+input[type="number"] {
+    padding: 10px 14px;
+    font-size: 18px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    padding: 8px 15px;
+    background-color: #DA7D67;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #A41E37;
+}
+
+#resultContainer {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #333;
+}
+
+#celebration {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hidden {
+    display: none;
+}
+
+.ribbon {
+    width: 100px;
+    height: 100px;
+    background-color: #FFD700;
+    position: relative;
+    border-radius: 50%;
+    animation: ribbonPop 0.8s ease both;
+}
+
+.audience {
+    font-size: 2em;
+}
+
+
+@media only screen and (min-width: 320px) and (max-width: 376px) {
+	.container {
+        width: 90%;
+    }
+    button {
+        margin-top: 10px;
+        width: 90%;
+        font-size: 18px;
+    }
+}
+
+@media only screen and (min-width: 376px) and (max-width: 426px) {
+    .container {
+        width: 90%;
+    }
+    button {
+        margin-top: 10px;
+        width: 90%;
+        font-size: 18px;
+    }
+}
